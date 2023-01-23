@@ -32,7 +32,35 @@ header{
     margin-bottom: 30px;
 }
 
-
 .card{
-    
+    background-color: #ffff;
+    color: #333;
+    border-radius: 15px;
+    padding: 40px 50px;
+    margin:20px 0;
+    position:relative;  /*--read about this relative/ absolute /fixed*/
 }
+.num-display {
+    position: relative;
+    background: #f4f4f4;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 19px;
+    border: 1px #eee solid;
+    transition: 0.3s;/*--read about this relative/ absolute /fixed*/
+  }
+.num-display {
+    position:absolute;/*--reac about this relative/ absolute /fixed*/
+    top: -10px;
+    left: -10px;
+  }
+
+  .num-display {
+    background: #ff6a95;
+    color: #fff;
+  }
+  
+
