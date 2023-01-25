@@ -1,3 +1,5 @@
+import React from "react"
+
 import PropTypes from 'prop-types'  //specify which types props should be used 
 function Header({text,bgColor,textColor}) {
 
