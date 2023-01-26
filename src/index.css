@@ -57,7 +57,6 @@ header{
     top: -10px;
     left: -10px;
   }
-
   .num-display {
     background: #ff6a95;
     color: #fff;
@@ -86,3 +85,75 @@ header{
     justify-content: space-between;
     align-items: center;
   }
+
+  .input-group{
+    display: flex;/*to read this*/
+
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 8px;
+    
+  }
+
+  .input-group  {
+    width: 100%;
+  }
+
+input{
+  flex-grow: 2;/*to read this*/
+
+  border: none;
+  font-size: 16px;
+}
+
+input:focus{
+  outline: none;/*to read this*/
+
+}
+
+  
+.card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn{
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn-secondary{
+  background-color: #ff6a95;
+}
+
+.btn-primary{
+  background-color: #202142;
+}
+
+.btn:hover{
+  transform: scale(0.98);/*to read this*/
+  opacity: 0.9;
+}
+
+.btn:disabled{
+  background-color: #cccccc;
+  color:#333;
+}
+
+.btn:disabled:hover{/*to read this*/
+  transform: scale(1);
+  opacity: 1;
+}
+
+.message {
+  padding-top: 10px;
+  text-align: center;
+  color: rebeccapurple;
+}

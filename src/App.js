@@ -4,6 +4,7 @@ import FeedbackList from "./components/FeedbackList"
 import { useState } from "react"
 import FeedbackData from './data/FeedbackData'
 import FeedbackStats from "./components/FeedbackStats"
+import FeedbackForm from "./components/FeedbackForm"
 
 
 function App(){
@@ -17,6 +18,7 @@ function App(){
     <>
     <Header/>
     <div className="container">
+        <FeedbackForm/>
         <FeedbackStats feedback={feedback }/> {/*feedback is a state so whenever it changes it will automatically updated to statscomponents*/}
         <FeedbackList feedback={feedback} 
         handleDelete={deleteFeedback}  //passing handledelete and catching in the feedbacklist
