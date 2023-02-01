@@ -6,6 +6,9 @@ import FeedbackData from './data/FeedbackData'
 import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 import {v4 as uuidv4} from 'uuid' //so to generate a new id call uuidv4 as a function 
+import AboutPage from "./pages/AboutPage"
+import { BrowserRouter,Routes,Route } from "react-router-dom"
+import AboutIconLink from "./components/AboutIconLink"
 
 
 function App(){
@@ -23,17 +26,27 @@ function App(){
         }
     }
   return (
-    <>
+    //routing to different page
+    <BrowserRouter>
     <Header/>
     <div className="container">
+    <Routes>
+
+      <Route exact  path="/" element={
+        <>
         <FeedbackForm handleAdd={addFeedback} /> {/* adding feedback  handleadd pass in as prop in feedbackfrom*/}
         <FeedbackStats feedback={feedback }/> {/*feedback is a state so whenever it changes it will automatically updated to statscomponents*/}
-        <FeedbackList feedback={feedback} 
-        handleDelete={deleteFeedback}  //passing handledelete and catching in the feedbacklist
-        />
+        <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />  {/*//passing handledelete and catching in the feedbacklist */}
+        <AboutIconLink/>
+        </>
+      }>
+            
 
+      </Route>
+      <Route path="/about" element={<AboutPage/>}/>
+    </Routes>
     </div>
-    </>
+    </BrowserRouter>
   )
 }
 

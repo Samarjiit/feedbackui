@@ -203,3 +203,25 @@ input:focus{
   background: #ff6a95;
   color: #fff;
 }
+
+.about-link {
+  display: flex;
+  justify-content: flex-end;/*to read this*/
+}
+
+.about-link a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-link a:hover {
+  color: #ff6a95;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin: 10px 0;
+}
